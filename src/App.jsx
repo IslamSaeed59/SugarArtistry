@@ -6,6 +6,7 @@ import ProductDetails from "./pages/ProductDetails";
 import OurStory from "./pages/OurStory";
 import Journal from "./pages/Journal";
 import AdminAddProduct from "./pages/AdminAddProduct";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   return (
@@ -19,6 +20,9 @@ const App = () => {
         
         {/* Admin Routes */}
         <Route path="/admin/add" element={<AdminAddProduct />} />
+        
+        {/* Catch-all Route */}
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
