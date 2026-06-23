@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-cream: #FAF9F6;
+  --color-cream-dark: #F0EBE1;
+  --color-sand: #EAE2D6;
+  --color-charcoal: #1C1C1C;
+  --color-charcoal-light: #2A2A2A;
+  --color-rose-gold: #C07F73;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-charcoal font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-normal;
+  }
+}
+/* Trigger tailwind rebuild */
