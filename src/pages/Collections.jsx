@@ -232,7 +232,7 @@ const Collections = () => {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12"
+            className="grid grid-cols-2 lg:grid-cols-3 gap-x-4 sm:gap-x-6 gap-y-8 sm:gap-y-12"
           >
             {loadingProducts ? (
             <div className="col-span-1 md:col-span-2 lg:col-span-3 flex justify-center py-20 text-charcoal/50">
