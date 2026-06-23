@@ -71,17 +71,17 @@ const Hero = () => {
           
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4">
             <Link 
-              to="/gallery" 
+              to="/collections" 
               className="bg-charcoal text-cream px-8 py-3 text-xs tracking-widest font-semibold hover:bg-rose-gold transition-colors text-center"
             >
-              VIEW GALLERY
+              VIEW COLLECTION
             </Link>
-            <Link 
-              to="/custom-orders" 
-              className="bg-transparent text-charcoal border border-charcoal px-8 py-3 text-xs tracking-widest font-semibold hover:bg-charcoal hover:text-cream transition-colors text-center"
+            <button 
+              disabled
+              className="bg-transparent text-charcoal border border-charcoal px-8 py-3 text-xs tracking-widest font-semibold opacity-60 cursor-not-allowed text-center"
             >
-              CUSTOM COMMISSION
-            </Link>
+              COMMING SOON
+            </button>
           </motion.div>
         </motion.div>
       </div>
