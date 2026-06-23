@@ -265,12 +265,12 @@ const Collections = () => {
                   </div>
                 </Link>
                 
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h3 className="text-charcoal font-serif text-lg mb-1">{product.name}</h3>
-                    <p className="text-charcoal/50 text-xs tracking-widest uppercase">{product.categoryId.replace("-", " ")}</p>
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-1 sm:gap-2 mt-2 sm:mt-0">
+                  <div className="pr-0 sm:pr-2">
+                    <h3 className="text-charcoal font-serif text-sm sm:text-lg mb-0.5 sm:mb-1 leading-tight">{product.name}</h3>
+                    <p className="text-charcoal/50 text-[10px] sm:text-xs tracking-widest uppercase">{product.categoryId.replace("-", " ")}</p>
                   </div>
-                  <span className="text-rose-gold font-medium">${product.price}</span>
+                  <span className="text-rose-gold font-medium text-sm sm:text-base whitespace-nowrap mt-1 sm:mt-0">${product.price}</span>
                 </div>
               </motion.div>
             ))
