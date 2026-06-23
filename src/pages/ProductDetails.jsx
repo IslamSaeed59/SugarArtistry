@@ -99,7 +99,7 @@ const ProductDetails = () => {
             <h1 className="text-3xl md:text-5xl text-charcoal font-serif mb-4 leading-tight">
               {product.name}
             </h1>
-            <p className="text-xl text-rose-gold font-light">${product.price}</p>
+            <p className="text-xl text-rose-gold font-light">{product.price} EGP</p>
           </div>
 
           <div className="mb-10 text-charcoal/70 font-light leading-relaxed">
@@ -246,7 +246,7 @@ const ProductDetails = () => {
                   </TiltCard>
                   <div>
                     <h3 className="text-charcoal text-base mb-1 truncate">{p.name}</h3>
-                    <p className="text-charcoal/60 text-xs font-light tracking-wide">${p.price}</p>
+                    <p className="text-charcoal/60 text-xs font-light tracking-wide">{p.price} EGP</p>
                   </div>
                 </Link>
               </motion.div>

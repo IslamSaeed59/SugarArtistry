@@ -310,7 +310,7 @@ const AdminAddProduct = () => {
                 />
               </div>
               <div>
-                <label className="block text-[10px] uppercase tracking-widest text-charcoal/70 mb-2">Price ($) *</label>
+                <label className="block text-[10px] uppercase tracking-widest text-charcoal/70 mb-2">Price (EGP) *</label>
                 <input 
                   type="number" 
                   value={price} 
@@ -504,7 +504,7 @@ const AdminAddProduct = () => {
                   onChange={(e) => setSizeInput(e.target.value)}
                   onKeyDown={(e) => handleAddTag(e, sizeInput, setSizeInput, sizeOptions, setSizeOptions)}
                   className="w-full border-b border-charcoal/20 bg-transparent py-2 text-charcoal focus:outline-none focus:border-rose-gold text-sm"
-                  placeholder="e.g. Large (+$50)"
+                  placeholder="e.g. Large (+50 EGP)"
                 />
               </div>
 

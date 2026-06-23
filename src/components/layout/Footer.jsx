@@ -57,14 +57,11 @@ const Footer = () => {
               Crafting heirloom resin art since 1994. Our mission is to elevate the ordinary through meticulous craftsmanship and pure materials.
             </p>
             <div className="flex gap-4">
-              <a href="#" aria-label="Instagram" className="text-charcoal/60 hover:text-rose-gold transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=100069204040173" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-charcoal/60 hover:text-rose-gold transition-colors">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
+              <a href="https://www.instagram.com/yasmin_shousha/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-charcoal/60 hover:text-rose-gold transition-colors">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-              </a>
-              <a href="#" aria-label="Pinterest" className="text-charcoal/60 hover:text-rose-gold transition-colors">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a10 10 0 0 0-3.66 19.31c.21-.83.4-2.12.08-3.03l-1.32-3.8c-.37-.96-.58-1.99-.58-3.04a7.58 7.58 0 0 1 14.86-1.57c0 3.8-2.39 6.89-5.7 6.89-1.12 0-2.17-.58-2.54-1.27l-.68 2.58c-.24.93-.9 2.08-1.34 2.78A10 10 0 1 0 12 2z"></path></svg>
-              </a>
-              <a href="#" aria-label="TikTok" className="text-charcoal/60 hover:text-rose-gold transition-colors">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v3a8 8 0 0 1-5-1.5z"></path></svg>
               </a>
             </div>
           </div>
