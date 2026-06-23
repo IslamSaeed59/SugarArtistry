@@ -116,9 +116,21 @@ const AdminAddProduct = () => {
   };
 
   const handleGalleryImagesSelect = (e) => {
-    const files = Array.from(e.target.files);
-    setGalleryFiles([...galleryFiles, ...files]);
-    const previews = files.map(f => URL.createObjectURL(f));
+    const selectedFiles = Array.from(e.target.files);
+    const remainingSlots = 3 - galleryFiles.length;
+
+    if (remainingSlots <= 0) {
+      alert("You can only upload a maximum of 3 gallery images.");
+      return;
+    }
+
+    const filesToAdd = selectedFiles.slice(0, remainingSlots);
+    if (selectedFiles.length > remainingSlots) {
+      alert(`You can only add up to 3 gallery images. Only ${filesToAdd.length} image(s) were added.`);
+    }
+
+    setGalleryFiles([...galleryFiles, ...filesToAdd]);
+    const previews = filesToAdd.map(f => URL.createObjectURL(f));
     setGalleryPreviews([...galleryPreviews, ...previews]);
   };
 
@@ -403,13 +415,19 @@ const AdminAddProduct = () => {
 
               {/* Gallery Images */}
               <div>
-                <label className="block text-[10px] uppercase tracking-widest text-charcoal/70 mb-3">Gallery Images (Optional)</label>
-                <div 
-                  onClick={() => galleryInputRef.current.click()}
-                  className="border border-dashed border-charcoal/20 bg-sand/10 hover:bg-sand/20 transition-colors cursor-pointer flex flex-col items-center justify-center py-6"
-                >
-                  <span className="text-[10px] text-charcoal/60 uppercase tracking-widest">+ Add More Images</span>
+                <div className="flex justify-between items-center mb-3">
+                  <label className="block text-[10px] uppercase tracking-widest text-charcoal/70">Gallery Images (Optional, Max 3)</label>
+                  <span className="text-[10px] text-charcoal/50">{galleryPreviews.length}/3 Added</span>
                 </div>
+                
+                {galleryPreviews.length < 3 && (
+                  <div 
+                    onClick={() => galleryInputRef.current.click()}
+                    className="border border-dashed border-charcoal/20 bg-sand/10 hover:bg-sand/20 transition-colors cursor-pointer flex flex-col items-center justify-center py-6"
+                  >
+                    <span className="text-[10px] text-charcoal/60 uppercase tracking-widest">+ Add More Images</span>
+                  </div>
+                )}
                 <input type="file" accept="image/*" multiple ref={galleryInputRef} onChange={handleGalleryImagesSelect} className="hidden" />
                 
                 {/* Previews */}
