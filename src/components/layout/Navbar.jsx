@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import logo from "../../assets/Logo.jpeg";
 
 const Navbar = () => {
   return (
@@ -6,9 +7,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-full bg-charcoal text-cream flex items-center justify-center font-serif italic text-lg shadow-sm group-hover:bg-rose-gold transition-colors">
-            S
-          </div>
+          <img src={logo} alt="Sugar Artistry Logo" className="w-10 h-10 rounded-full object-cover shadow-sm group-hover:scale-105 transition-transform duration-300" />
           <span className="font-serif text-xl tracking-wide text-charcoal">Sugar Artistry</span>
         </Link>
 
